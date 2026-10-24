@@ -8,9 +8,9 @@ print("=== PDV COM DESCONTOS ===")
 while True:
     entrada_valor = input("\nValor da compra (0 para encerrar): ").strip().replace(",", ".")
 
-    if not entrada_valor.replace(".", "", 1).isdigit():
-        print("Aviso: digite um valor numerico valido.")
-        continue
+   if not entrada_valor.lstrip("-").replace(".", "", 1).isdigit():
+    print("Aviso: digite um valor numerico valido.")
+    continue
 
     valor_original = float(entrada_valor)
 
